@@ -11,6 +11,15 @@ public class Registered_users {
 	private String email;
 	private String password;
 	
+	public Registered_users() {
+		
+	}
+	public Registered_users(int id, String u_name, String email, String password) {
+		this.id = id;
+		this.u_name = u_name;
+		this.email = email;
+		this.password = password;
+	}
 	@Id
 	public int getId() {
 		return id;

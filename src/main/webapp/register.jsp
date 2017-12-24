@@ -18,12 +18,13 @@
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <style>
 form {
 	border: 3px solid #f1f1f1;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password],input[type=email]  {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -218,10 +219,8 @@ span.psw {
 					</div>
 
 					<div class="container" style="background-color: #f1f1f1">
-						</b></label> <a href="register.jsp"><button type="button"
-								class="cancelbtn">Create Account</button></a> <span class="psw">Forgot
-							<a href="#">password?</a>
-						</span>
+						</b></label> <a href="register.jsp"><button type="button" class="cancelbtn">Create
+								Account</button></a> <span class="psw">Forgot <a href="#">password?</a></span>
 					</div>
 				</form>
 
@@ -239,9 +238,11 @@ span.psw {
 		<div id="main_content">
 			<div id="menu_tab">
 				<ul class="menu">
-					<li><a id="home" href="#" class="nav"> Home</a></li>
+					<li><a id="home" href="index.jsp" class="nav"> Home</a></li>
 					<li class="divider"></li>
 					<li><a href="allAdds.jsp" class="nav">All Adds</a></li>
+					<li class="divider"></li>
+					<li><a href="#" class="nav">Specials</a></li>
 					<li class="divider"></li>
 					<li><a href="addPost.jsp" class="nav">My Posts</a></li>
 					<li class="divider"></li>
@@ -253,7 +254,6 @@ span.psw {
 						<div class="title_box" id="myLoginBtn" style="color: red">Sign
 							Up</div>
 					</li>
-
 				</ul>
 			</div>
 			<!-- end of menu tab -->
@@ -276,16 +276,16 @@ span.psw {
 					<li class="odd"><a href="#">Others</a></li>
 				</ul>
 				<div class="title_box">Special Products</div>
-
 				<div class="border_box">
 					<div class="product_title">
-						<a href=""></a>
+						<a href="viewDetails2.jsp"></a>
 					</div>
 					<div class="product_img">
-						<a href=""><img src="images/curtain.jpg" alt="" border="0" width="150" height="150" /></a>
+						<a href=""><img src="images/curtain.jpg" alt="" border="0"
+							width="150" height="150" /></a>
 					</div>
 					<div class="prod_price">
-						<span class="reduce">10,000$</span> <span class="price">6,999$</span>
+						<span class="reduce">350$</span> <span class="price">270$</span>
 					</div>
 				</div>
 				<div class="title_box">Newsletter</div>
@@ -300,233 +300,36 @@ span.psw {
 			</div>
 			<!-- end of left content -->
 			<div class="center_content">
-				<div class="oferta">
-					<a href=""><img src="" width="165" height="113" border="0"
-						class="oferta_img" alt="" /></a>
 
-					<div class="oferta_details">
-						<div class="oferta_title">Special Products And Offers</div>
-						<div class="oferta_text">
-							You Can Advertise Here By Clicking Bellow Button.Want To Sell
-							Quickly Advertise Here.<br>
-							<b>Contact Now 0719987280</b>
-						</div>
-						<a href="specialAdd.jsp" class="prod_buy">Advertise here</a>
+				<div class="" style="width: 100%">
 
-					</div>
-
-				</div>
-
-
-				<div id="latest" class="center_title_bar">Latest Products</div>
-
-				<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
+					<form action="AddRegisterUser.java">
+						<div class="container" style="width: 90%">
+							<label><b>Username</b></label> <input type="text"
+								placeholder="Enter Username" name="uname" required> <label><b>Email</b></label>
+								<input type="email" placeholder="Enter email" name="emauil_us"
+								required> <label><b>Phone Number</b></label> <input
+									type="text" placeholder="Enter Phone Number" name="phone"
+									required> <label><b>Password</b></label> <input
+										type="password" placeholder="Enter Password" name="psw"
+										required id="password" > <label><b>Confirm Password</b></label> <input
+											type="password" placeholder="Confirm Password" name="psw1"
+											required id="confirm_password">
+											   </fieldset>
+												<button type="submit">Register</button> <input
+												type="checkbox" checked="checked"> Remember me 
 						</div>
 
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
 
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-						<div class="prod_box">
-					<div class="center_prod_box">
+					</form>
 
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
 
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
+					<a href="#"><button class="loginBtn loginBtn--facebook">
+							Login with Facebook</button></a>
 
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-						<div class="prod_box">
-					<div class="center_prod_box">
+					<button class="loginBtn loginBtn--google">Login with
+						Google</button>
 
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-				
-
-				<div class="center_title_bar">All Products</div>
-
-		<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-					<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-						<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-				
-
-				<div class="center_title_bar">Recomended Products</div>
-
-				<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-
-				<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
-				</div>
-
-					<div class="prod_box">
-					<div class="center_prod_box">
-
-						<div class="product_title">
-							<a href="viewDetails.jsp">Product Title</a>
-						</div>
-						<div class="product_img">
-							<a href="viewDetails.jsp"> <img src="getImage.jsp"
-								width="80px" height="70px" alt="" border="0" class="oferta_img1" />
-							</a>
-						</div>
-
-						<div class="prod_price">
-							<span class="reduce">350$</span> <span class="price"></span>
-						</div>
-
-					</div>
-					<div class="prod_details_tab">
-						<a href="#" class="prod_buy">Change To</a> <a href="#"
-							class="prod_details">Details</a>
-					</div>
 				</div>
 
 
@@ -607,8 +410,10 @@ span.psw {
 			//next
 
 		}
-      </script>
-      <script>
+	</script>
+
+
+	<script>
 		// Get the modal
 		var modal = document.getElementById('myModal');
 
@@ -635,7 +440,8 @@ span.psw {
 			}
 		}
 	</script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script
+		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 	<script src="js/index1.js"></script>
 

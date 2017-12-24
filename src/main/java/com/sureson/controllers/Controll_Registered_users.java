@@ -1,5 +1,9 @@
 package com.sureson.controllers;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.jar.Attributes.Name;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -30,4 +34,10 @@ public class Controll_Registered_users {
 	    return addRegisterUsers.getEmail();
 	    //session.close();
 	}
+	 public static List<Name> getUser() {
+		 List <Name> list =new ArrayList<>();
+		// list.add("1");
+		// list.add("9");
+		 return list;	 
+	 }
 }

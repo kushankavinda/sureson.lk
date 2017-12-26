@@ -9,6 +9,9 @@ public class User_Details{
 		System.out.println("view is coming to the party baby : "+a);
 	//	System.out.println("k8ush");
 	}
+	public static void testing() {
+		System.out.println("tesing okay");	
+	}
 }
 
 

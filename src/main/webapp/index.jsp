@@ -1,197 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Change.lk</title>
+
+<title>Sureson.lk</title>
 <meta http-equiv="Content-Type"
 	content="text/html; charset=windows-1252" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-<link rel='stylesheet prefetch'
-	href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
-
-<link rel="stylesheet" href="css/style1.css">
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-form {
-	border: 3px solid #f1f1f1;
-}
-
-input[type=text], input[type=password] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-}
-
-button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-}
-
-button:hover {
-	opacity: 0.8;
-}
-
-.cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-}
-
-.imgcontainer {
-	text-align: center;
-	margin: 24px 0 12px 0;
-}
-
-img.avatar {
-	width: 40%;
-	border-radius: 50%;
-}
-
-.container {
-	padding: 16px;
-}
-
-span.psw {
-	float: right;
-	padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-	span.psw {
-		display: block;
-		float: none;
-	}
-	.cancelbtn {
-		width: 100%;
-	}
-}
-</style>
-<style>
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-}
-
-/* The Close Button */
-.close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close:hover, .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-</style>
-<style>
-.loginBtn {
-	box-sizing: border-box;
-	position: relative;
-	/* width: 13em;  - apply for fixed size */
-	margin: 0.2em;
-	padding: 0 15px 0 46px;
-	border: none;
-	text-align: left;
-	line-height: 34px;
-	white-space: nowrap;
-	border-radius: 0.2em;
-	font-size: 16px;
-	color: #FFF;
-}
-
-.loginBtn:before {
-	content: "";
-	box-sizing: border-box;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 34px;
-	height: 100%;
-}
-
-.loginBtn:focus {
-	outline: none;
-}
-
-.loginBtn:active {
-	box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
-}
-
-/* Facebook */
-.loginBtn--facebook {
-	background-color: #4C69BA;
-	background-image: linear-gradient(#4C69BA, #3B55A0);
-	/*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
-	text-shadow: 0 -1px 0 #354C8C;
-}
-
-.loginBtn--facebook:before {
-	border-right: #364e92 1px solid;
-	background:
-		url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png')
-		6px 6px no-repeat;
-}
-
-.loginBtn--facebook:hover, .loginBtn--facebook:focus {
-	background-color: #5B7BD5;
-	background-image: linear-gradient(#5B7BD5, #4864B1);
-}
-
-/* Google */
-.loginBtn--google {
-	/*font-family: "Roboto", Roboto, arial, sans-serif;*/
-	background: #DD4B39;
-}
-
-.loginBtn--google:before {
-	border-right: #BB3F30 1px solid;
-	background:
-		url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png')
-		6px 6px no-repeat;
-}
-
-.loginBtn--google:hover, .loginBtn--google:focus {
-	background: #E74B37;
-}
-</style>
+	href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+	<link rel='stylesheet prefetch'
+		href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'/>
+		<link rel="stylesheet" href="css/style1.css"/>
+			<link rel="stylesheet" href="css/login_form.css"/>
+				<script
+					src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -210,11 +33,11 @@ span.psw {
 					<div class="container" style="width: 90%">
 						<label><b>Username</b></label> <input type="text"
 							placeholder="Enter Username" name="uname" required> <label><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw"
+							<input type="password" placeholder="Enter Password" name="psw"
 							required>
 
-						<button type="submit">Login</button>
-						<input type="checkbox" checked="checked"> Remember me
+								<button type="submit">Login</button> <input type="checkbox"
+								checked="checked"> Remember me 
 					</div>
 
 					<div class="container" style="background-color: #f1f1f1">
@@ -282,7 +105,8 @@ span.psw {
 						<a href=""></a>
 					</div>
 					<div class="product_img">
-						<a href=""><img src="images/curtain.jpg" alt="" border="0" width="150" height="150" /></a>
+						<a href=""><img src="images/curtain.jpg" alt="" border="0"
+							width="150" height="150" /></a>
 					</div>
 					<div class="prod_price">
 						<span class="reduce">10,000$</span> <span class="price">6,999$</span>
@@ -308,8 +132,7 @@ span.psw {
 						<div class="oferta_title">Special Products And Offers</div>
 						<div class="oferta_text">
 							You Can Advertise Here By Clicking Bellow Button.Want To Sell
-							Quickly Advertise Here.<br>
-							<b>Contact Now 0719987280</b>
+							Quickly Advertise Here.<br> <b>Contact Now 0719987280</b>
 						</div>
 						<a href="specialAdd.jsp" class="prod_buy">Advertise here</a>
 
@@ -342,7 +165,7 @@ span.psw {
 							class="prod_details">Details</a>
 					</div>
 				</div>
-						<div class="prod_box">
+				<div class="prod_box">
 					<div class="center_prod_box">
 
 						<div class="product_title">
@@ -364,7 +187,7 @@ span.psw {
 							class="prod_details">Details</a>
 					</div>
 				</div>
-						<div class="prod_box">
+				<div class="prod_box">
 					<div class="center_prod_box">
 
 						<div class="product_title">
@@ -386,11 +209,11 @@ span.psw {
 							class="prod_details">Details</a>
 					</div>
 				</div>
-				
+
 
 				<div class="center_title_bar">All Products</div>
 
-		<div class="prod_box">
+				<div class="prod_box">
 					<div class="center_prod_box">
 
 						<div class="product_title">
@@ -412,7 +235,7 @@ span.psw {
 							class="prod_details">Details</a>
 					</div>
 				</div>
-					<div class="prod_box">
+				<div class="prod_box">
 					<div class="center_prod_box">
 
 						<div class="product_title">
@@ -434,7 +257,7 @@ span.psw {
 							class="prod_details">Details</a>
 					</div>
 				</div>
-						<div class="prod_box">
+				<div class="prod_box">
 					<div class="center_prod_box">
 
 						<div class="product_title">
@@ -456,7 +279,7 @@ span.psw {
 							class="prod_details">Details</a>
 					</div>
 				</div>
-				
+
 
 				<div class="center_title_bar">Recomended Products</div>
 
@@ -506,7 +329,7 @@ span.psw {
 					</div>
 				</div>
 
-					<div class="prod_box">
+				<div class="prod_box">
 					<div class="center_prod_box">
 
 						<div class="product_title">
@@ -607,36 +430,10 @@ span.psw {
 			//next
 
 		}
-      </script>
-      <script>
-		// Get the modal
-		var modal = document.getElementById('myModal');
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("myLoginBtn");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
 	</script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+	<script src='js/modal.js'></script>
+	<script
+		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="js/index1.js"></script>
 
 </body>

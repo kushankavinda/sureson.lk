@@ -7,7 +7,6 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/aboutKushan")
 public class UserDetailsRest {
-	
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getUsers() {

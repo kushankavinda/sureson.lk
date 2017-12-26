@@ -1,6 +1,10 @@
 package restApi;
 
+import com.sureson.controllers.Controll_Registered_users;
+
 public class AddRegisterUser {
-	//SString a=request.getParameter("name");
-	 //write create resource request
+	public static void main (String args[]) {
+		Controll_Registered_users controll_Registered_users=new Controll_Registered_users();
+		controll_Registered_users.getUser(7);
+	}
 }

@@ -10,7 +10,7 @@ public class UserDetailsRest {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getUsers() {
-		return "kushan is unstoppable";
+		return "kushan is unstoppable yes";
 	}
 }
 

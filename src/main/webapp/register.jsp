@@ -129,7 +129,7 @@
 
 				<div class="" style="width: 100%">
 
-					<form id="form_id" name="form"  method="post">
+					<form id="form_id" name="form"  method="post"    >
 						<div class="container" style="width: 90%">
 							<label><b>Username</b></label> <input type="text" placeholder="Enter Username" name="uname" id="u_name"  pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. kamal" required/> 
 							<label><b>Email</b></label> <input type="email" placeholder="Enter email" name="emauil_us" id="email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title=" e.g. xxx@gmail.com" /> 
@@ -229,7 +229,7 @@
 		}
 	</script>
 
-    <script src="js/form_validation.js"></script>
+    <script src="js/form_validation.js"></script> 
     <script src='js/modal.js'></script>
 	<script
 		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

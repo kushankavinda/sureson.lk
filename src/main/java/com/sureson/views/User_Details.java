@@ -5,7 +5,7 @@ import com.sureson.controllers.Controll_Registered_users;
 public class User_Details{
 	public static void main(String args[]) {
 		Controll_Registered_users  controll_Registered_users  = new Controll_Registered_users ();
-		String a= controll_Registered_users.getUser(10);
+		String a= controll_Registered_users.getUser(6);
 		System.out.println("view is coming to the party baby : "+a);		
 	}	
 }

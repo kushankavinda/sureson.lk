@@ -132,7 +132,7 @@
 					<form id="form_id" name="form"  method="post">
 						<div class="container" style="width: 90%">
 							<label><b>Username</b></label> <input type="text" placeholder="Enter Username" name="uname" id="u_name"  pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. kamal" required/> 
-							<label><b>Email</b></label> <input type="email" placeholder="Enter email" name="emauil_us" id="email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title=" e.g. kushan.creative@gmail.com" /> 
+							<label><b>Email</b></label> <input type="email" placeholder="Enter email" name="emauil_us" id="email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title=" e.g. xxx@gmail.com" /> 
 							<label><b>Phone Number</b></label> <input type="tel" placeholder="Enter Phone Number" name="phone" pattern="^\d{10}$" id="phone_nu"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title=" e.g. 071xxxxxxx"	required/>
 							<label><b>Password</b></label> <input type="password" placeholder="Enter Password" name="psw" required   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  id="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" />
 							<label><b>Confirm Password</b></label> <input type="password" placeholder="Confirm Password" name="psw1" required id="confirm_password"/>

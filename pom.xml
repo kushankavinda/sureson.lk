@@ -54,6 +54,11 @@
             <artifactId>jersey-media-json-binding</artifactId>
         </dependency>
         -->
+         <dependency>
+	     <groupId>com.atlassian.clover</groupId>
+	         <artifactId>clover</artifactId>
+	      <version>4.1.2</version>
+	     </dependency> 
     </dependencies>
     <properties>
 

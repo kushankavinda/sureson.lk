@@ -1,10 +1,12 @@
 package restApi;
 
-import com.sureson.controllers.Controll_Registered_users;
+
+import com.sureson.controllers.Check_login;
+
 
 public class AddRegisterUser {
 	public static void main (String args[]) {
-		Controll_Registered_users controll_Registered_users=new Controll_Registered_users();
-		System.out.println(controll_Registered_users.getUser(40));
+		 Check_login  check_login  = new Check_login ();
+	     System.out.println(Check_login.check_user_login("kushan", " "));
 	}
 }

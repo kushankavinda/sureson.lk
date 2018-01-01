@@ -28,7 +28,7 @@ public class Check_login {
 			  int success_check=0;
 			  for(int i=0;i<results.size();i++) {
 				  if(results.get(i).equals(password)) {
-					  //enter password and user name to session
+					  //enter password and user name to session		  
 					  System.out.println("uname : "+uname+" passowrd : "+password +"entered to the session");
 					  ++success_check;
 				  }	  
@@ -40,7 +40,7 @@ public class Check_login {
 			  }
 		  }catch(HibernateException e) {
 			  System.out.println("Exception is comming when retrive data on database");
-			  return null;
+			  return "user login is not sucess";
 		  }		
 	}
 }

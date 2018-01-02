@@ -428,6 +428,7 @@
 
 		}
 	</script>
+	
 	<script src="js/login_validation.js"></script>
 	<script src='js/modal.js'></script>
 	<script
